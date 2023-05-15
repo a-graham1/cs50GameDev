@@ -242,10 +242,8 @@ function love.update(dt)
     end
 
     -- player 2
-    if love.keyboard.isDown('up') then
-        player2.dy = -PADDLE_SPEED
-    elseif love.keyboard.isDown('down') then
-        player2.dy = PADDLE_SPEED
+    if ball.y then
+        player2.y = ball.y
     else
         player2.dy = 0
     end

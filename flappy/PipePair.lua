@@ -7,11 +7,10 @@
     Used to represent a pair of pipes that stick together as they scroll, providing an opening
     for the player to jump through in order to score a point.
 ]]
-
 PipePair = Class{}
 
 -- size of the gap between pipes
-local GAP_HEIGHT = 90
+local GAP_HEIGHT = 100
 
 function PipePair:init(y)
     -- flag to hold whether this pair has been scored (jumped through)
